@@ -10,10 +10,11 @@ export default function Footer() {
           {/* Col 1 */}
           <div className="footer-col">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.75rem' }}>
-              <div className="nav-logo-icon" style={{ width: '1.8rem', height: '1.8rem' }}>
-                <Heart size={14} fill="#ffffff" stroke="#ffffff" />
-              </div>
-              <span style={{ fontWeight: 900, color: '#111827', fontSize: '1.1rem', letterSpacing: '-0.02em' }}>CAREBRIDGE</span>
+              <img 
+                src="/carebridge-logo.png" 
+                alt="CareBridge" 
+                style={{ height: '42px', width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply' }} 
+              />
             </div>
             <p style={{ color: '#4b5563', fontSize: '0.875rem', lineHeight: 1.6, marginBottom: '1rem', maxWidth: '380px' }}>
               AI-assisted emergency healthcare coordination platform connecting patients, nearby emergency departments, and family responders in critical minutes.

@@ -146,9 +146,12 @@ export default function EmergencySummaryPage() {
           {/* Header */}
           <div className="summary-header">
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#dc2626', marginBottom: '0.25rem' }}>
-                <Heart size={20} fill="#dc2626" stroke="#dc2626" />
-                <span style={{ fontSize: '1.2rem', fontWeight: 900, letterSpacing: '0.04em', color: '#111827' }}>CAREBRIDGE</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.35rem' }}>
+                <img 
+                  src="/carebridge-logo.png" 
+                  alt="CareBridge" 
+                  style={{ height: '42px', width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply' }} 
+                />
               </div>
               <div className="summary-title">EMERGENCY SUMMARY</div>
               <div className="summary-subtitle">Document ID: {summary.id} • Clinical Triage Protocol</div>

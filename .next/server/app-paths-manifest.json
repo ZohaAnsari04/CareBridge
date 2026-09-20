@@ -1,7 +1,12 @@
 {
+  "/hospitals/page": "app/hospitals/page.js",
   "/page": "app/page.js",
   "/assessment/page": "app/assessment/page.js",
-  "/contacts/page": "app/contacts/page.js",
+  "/emergency-profile/page": "app/emergency-profile/page.js",
   "/emergency-summary/page": "app/emergency-summary/page.js",
-  "/hospitals/page": "app/hospitals/page.js"
+  "/about/page": "app/about/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/contacts/page": "app/contacts/page.js",
+  "/privacy/page": "app/privacy/page.js",
+  "/icon.png/route": "app/icon.png/route.js"
 }

@@ -91,20 +91,16 @@ export default function Navbar() {
   return (
     <nav className="navbar" aria-label="Main Navigation">
       <div className="container navbar-inner">
-        {/* Brand */}
-        <Link href="/" className="nav-brand" onClick={() => setMobileMenuOpen(false)}>
-          <div className="nav-logo-icon">
-            <Heart size={20} fill="#ffffff" stroke="#ffffff" />
-          </div>
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-              <span style={{ color: '#111827', fontWeight: 900, letterSpacing: '-0.02em', fontSize: '1.25rem' }}>CAREBRIDGE</span>
-              <span style={{ fontSize: '0.65rem', background: '#fef2f2', color: '#dc2626', border: '1px solid #fecaca', padding: '1px 6px', borderRadius: '4px', fontWeight: 800, letterSpacing: '0.05em' }}>AI</span>
-            </div>
-            <div style={{ fontSize: '0.68rem', color: '#6b7280', fontWeight: 600, letterSpacing: '0.04em' }}>
-              EMERGENCY HEALTHCARE ACCESS
-            </div>
-          </div>
+        {/* Brand with Official Logo */}
+        <Link href="/" className="nav-brand" onClick={() => setMobileMenuOpen(false)} style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none' }}>
+          <img 
+            src="/carebridge-logo.png" 
+            alt="CareBridge AI Emergency Healthcare" 
+            style={{ height: '48px', width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply' }} 
+          />
+          <span style={{ fontSize: '0.62rem', background: '#fef2f2', color: '#dc2626', border: '1px solid #fecaca', padding: '1px 6px', borderRadius: '4px', fontWeight: 800, letterSpacing: '0.05em' }}>
+            AI EMERGENCY
+          </span>
         </Link>
 
         {/* Desktop Limelight Navigation */}
