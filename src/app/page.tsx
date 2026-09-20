@@ -17,6 +17,7 @@ import {
   Heart
 } from 'lucide-react';
 import HeroNetworkVisual from '@/components/home/HeroNetworkVisual';
+import MedicalBackground from '@/components/home/MedicalBackground';
 
 export default function LandingPage() {
   const pillars = [
@@ -60,14 +61,17 @@ export default function LandingPage() {
 
   return (
     <div>
-      {/* Hero Section with Subtle Red Accent */}
+      {/* Hero Section with Medical Background & Subtle Red Accent */}
       <section style={{ 
         padding: '4.5rem 0 3.5rem 0', 
         position: 'relative', 
         overflow: 'hidden',
         background: 'radial-gradient(circle at 70% 40%, rgba(220, 38, 38, 0.08), transparent 45%)'
       }}>
-        <div className="container">
+        {/* Subtle Medical Background: Clinical Cross Grid, Watermarks & Animated ECG Pulse */}
+        <MedicalBackground />
+
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div style={{ maxWidth: '860px', margin: '0 auto', textAlign: 'center', marginBottom: '3.5rem' }}>
             {/* Tagline pill */}
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#fef2f2', border: '1px solid #fecaca', padding: '0.4rem 1rem', borderRadius: '9999px', fontSize: '0.85rem', color: '#b91c1c', fontWeight: 700, marginBottom: '1.5rem' }}>

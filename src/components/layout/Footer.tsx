@@ -10,17 +10,17 @@ export default function Footer() {
           {/* Col 1 */}
           <div className="footer-col">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.75rem' }}>
-              <img 
-                src="/carebridge-logo.png" 
-                alt="CareBridge" 
-                style={{ height: '42px', width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply' }} 
+              <img
+                src="/carebridge-logo.png"
+                alt="CareBridge"
+                style={{ height: '42px', width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply' }}
               />
             </div>
             <p style={{ color: '#4b5563', fontSize: '0.875rem', lineHeight: 1.6, marginBottom: '1rem', maxWidth: '380px' }}>
               AI-assisted emergency healthcare coordination platform connecting patients, nearby emergency departments, and family responders in critical minutes.
             </p>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#fef2f2', border: '1px solid #fecaca', padding: '0.35rem 0.75rem', borderRadius: '6px', fontSize: '0.8rem', color: '#b91c1c', fontWeight: 600 }}>
-              <Award size={14} /> Hackathon Theme: Tech for a Better Tomorrow
+              <Award size={14} /> A project by Ansari Zoha Najmul Kalam
             </div>
           </div>
 
