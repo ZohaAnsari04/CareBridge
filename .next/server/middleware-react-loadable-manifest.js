@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"components\\\\hospitals\\\\InteractiveHospitalMap.tsx -> leaflet\":{\"id\":\"components\\\\hospitals\\\\InteractiveHospitalMap.tsx -> leaflet\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_leaflet_dist_leaflet-src_js.js\"]}}"
+self.__REACT_LOADABLE_MANIFEST="{}"
