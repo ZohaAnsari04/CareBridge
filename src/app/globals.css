@@ -1,9 +1,21 @@
+@tailwind components;
+@tailwind utilities;
+
 /* ==========================================================================
    CAREBRIDGE WHITE & EMERGENCY RED HEALTHCARE DESIGN SYSTEM
    Professional Medical-Tech Emergency Platform
    ========================================================================== */
 
 :root {
+  /* Shadcn standard tokens */
+  --primary: #DC2626;
+  --primary-foreground: #FFFFFF;
+  --card: #FFFFFF;
+  --card-foreground: #111827;
+  --foreground: #111827;
+  --secondary: #F8FAFC;
+  --secondary-foreground: #111827;
+
   /* Surfaces */
   --background: #FFFFFF;
   --surface: #FFFFFF;

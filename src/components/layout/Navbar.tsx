@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { 
   Heart, 
   MapPin, 
@@ -13,19 +13,78 @@ import {
   AlertCircle,
   Menu,
   X,
-  Activity
+  Home
 } from 'lucide-react';
+import { LimelightNav, NavItem } from '@/components/ui/limelight-nav';
 
 export default function Navbar() {
   const pathname = usePathname();
+  const router = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const navLinks = [
-    { href: '/assessment', label: 'Emergency', icon: AlertCircle, isEmergency: true },
-    { href: '/hospitals', label: 'Hospitals', icon: MapPin },
-    { href: '/emergency-summary', label: 'Summary', icon: FileText },
-    { href: '/contacts', label: 'Contacts', icon: Users },
-    { href: '/emergency-profile', label: 'Profile', icon: User },
+  const getActiveIndex = () => {
+    if (pathname === '/') return 0;
+    if (pathname.startsWith('/assessment')) return 1;
+    if (pathname.startsWith('/hospitals')) return 2;
+    if (pathname.startsWith('/emergency-summary')) return 3;
+    if (pathname.startsWith('/contacts')) return 4;
+    if (pathname.startsWith('/emergency-profile')) return 5;
+    if (pathname.startsWith('/dashboard')) return 6;
+    return 0;
+  };
+
+  const limelightItems: NavItem[] = [
+    {
+      id: 'nav-home',
+      icon: <Home size={19} />,
+      label: 'Home',
+      onClick: () => router.push('/'),
+    },
+    {
+      id: 'nav-emergency',
+      icon: <AlertCircle size={19} />,
+      label: 'Emergency Assessment',
+      onClick: () => router.push('/assessment'),
+    },
+    {
+      id: 'nav-hospitals',
+      icon: <MapPin size={19} />,
+      label: 'Nearby Care & Hospitals',
+      onClick: () => router.push('/hospitals'),
+    },
+    {
+      id: 'nav-summary',
+      icon: <FileText size={19} />,
+      label: 'Clinical Emergency Summary',
+      onClick: () => router.push('/emergency-summary'),
+    },
+    {
+      id: 'nav-contacts',
+      icon: <Users size={19} />,
+      label: 'Emergency Contacts',
+      onClick: () => router.push('/contacts'),
+    },
+    {
+      id: 'nav-profile',
+      icon: <User size={19} />,
+      label: 'Emergency Profile',
+      onClick: () => router.push('/emergency-profile'),
+    },
+    {
+      id: 'nav-dashboard',
+      icon: <LayoutDashboard size={19} />,
+      label: 'Readiness Dashboard',
+      onClick: () => router.push('/dashboard'),
+    },
+  ];
+
+  const mobileNavLinks = [
+    { href: '/', label: 'Home', icon: Home },
+    { href: '/assessment', label: 'Emergency Assessment', icon: AlertCircle, isEmergency: true },
+    { href: '/hospitals', label: 'Hospitals & Care', icon: MapPin },
+    { href: '/emergency-summary', label: 'Emergency Summary', icon: FileText },
+    { href: '/contacts', label: 'Emergency Contacts', icon: Users },
+    { href: '/emergency-profile', label: 'Emergency Profile', icon: User },
     { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   ];
 
@@ -48,26 +107,15 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* Desktop Links */}
-        <div className="nav-links">
-          {navLinks.map((link) => {
-            const Icon = link.icon;
-            const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
-            return (
-              <Link 
-                key={link.href} 
-                href={link.href} 
-                className={`nav-link ${isActive ? 'active' : ''}`}
-                style={{
-                  color: isActive ? '#dc2626' : undefined,
-                  fontWeight: isActive ? 700 : 500
-                }}
-              >
-                <Icon size={16} color={isActive ? '#dc2626' : link.isEmergency ? '#dc2626' : '#6b7280'} />
-                <span>{link.label}</span>
-              </Link>
-            );
-          })}
+        {/* Desktop Limelight Navigation */}
+        <div className="nav-limelight-wrapper">
+          <LimelightNav
+            items={limelightItems}
+            activeIndex={getActiveIndex()}
+            className="h-12 bg-white border border-slate-200 rounded-full shadow-sm px-1.5"
+            iconContainerClassName="px-3.5 py-1.5"
+            iconClassName="text-slate-700 hover:text-red-600 transition-colors"
+          />
         </div>
 
         {/* Action Button */}
@@ -95,7 +143,7 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div style={{ background: '#ffffff', borderBottom: '1px solid #e5e7eb', padding: '1rem', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-            {navLinks.map((link) => {
+            {mobileNavLinks.map((link) => {
               const Icon = link.icon;
               return (
                 <Link
@@ -121,7 +169,16 @@ export default function Navbar() {
       )}
 
       <style jsx>{`
-        @media (max-width: 900px) {
+        .nav-limelight-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        @media (max-width: 990px) {
+          .nav-limelight-wrapper {
+            display: none !important;
+          }
           #mobile-menu-toggle {
             display: inline-flex !important;
           }
