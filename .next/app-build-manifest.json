@@ -1,114 +1,50 @@
 {
   "pages": {
-    "/_not-found/page": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/chunks/app/_not-found/page-fb9cec99b131ad3c.js"
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/css/de0344634a627b5e.css",
-      "static/chunks/972-5526c492661727ea.js",
-      "static/chunks/347-60943bfe12b6db75.js",
-      "static/chunks/app/layout-f803d07e0a2fa10e.js"
-    ],
-    "/about/page": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/chunks/app/about/page-57b9221c8d34b026.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/assessment/result/page": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/chunks/972-5526c492661727ea.js",
-      "static/chunks/app/assessment/result/page-c09ceb11ec0f9a9f.js"
-    ],
-    "/assessment/page": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/chunks/app/assessment/page-860f3aba518b3a16.js"
-    ],
-    "/contacts/page": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/chunks/app/contacts/page-5c0527d3112c208e.js"
-    ],
-    "/dashboard/page": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/chunks/972-5526c492661727ea.js",
-      "static/chunks/app/dashboard/page-f1e107e172a46ed3.js"
-    ],
-    "/assessment/questions/page": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/chunks/app/assessment/questions/page-6cf17c1e319aeda6.js"
-    ],
-    "/emergency-profile/page": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/chunks/972-5526c492661727ea.js",
-      "static/chunks/app/emergency-profile/page-780dc6de5856f4ae.js"
-    ],
-    "/emergency-summary/page": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/chunks/app/emergency-summary/page-8b1fe72965420ed5.js"
-    ],
-    "/hospitals/[id]/page": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/chunks/972-5526c492661727ea.js",
-      "static/chunks/app/hospitals/[id]/page-88acd467c851abe2.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/assessment/result/page.js"
     ],
     "/hospitals/page": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/chunks/972-5526c492661727ea.js",
-      "static/chunks/347-60943bfe12b6db75.js",
-      "static/chunks/app/hospitals/page-f16d1a102460338d.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/hospitals/page.js"
     ],
-    "/page": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/chunks/972-5526c492661727ea.js",
-      "static/chunks/347-60943bfe12b6db75.js",
-      "static/chunks/app/page-2752b872e37aa4c8.js"
+    "/assessment/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/assessment/page.js"
     ],
-    "/privacy/page": [
-      "static/chunks/webpack-ccd9e02e92eaf3e7.js",
-      "static/chunks/fd9d1056-ed770793ccd26a05.js",
-      "static/chunks/117-6bffae31d204df20.js",
-      "static/chunks/main-app-b75c6846fc11d972.js",
-      "static/chunks/972-5526c492661727ea.js",
-      "static/chunks/app/privacy/page-141d74ace59a2d22.js"
+    "/emergency-summary/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/emergency-summary/page.js"
+    ],
+    "/contacts/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contacts/page.js"
+    ],
+    "/emergency-profile/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/emergency-profile/page.js"
+    ],
+    "/dashboard/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dashboard/page.js"
     ]
   }
 }
