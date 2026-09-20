@@ -1,6 +1,4 @@
 {
-  "/assessment/page": "app/assessment/page.js",
-  "/hospitals/page": "app/hospitals/page.js",
   "/page": "app/page.js",
-  "/emergency-summary/page": "app/emergency-summary/page.js"
+  "/icon.png/route": "app/icon.png/route.js"
 }
