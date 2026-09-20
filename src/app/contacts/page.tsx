@@ -42,6 +42,15 @@ export default function ContactsPage() {
     setProfile(CareBridgeStorage.getProfile());
     setHospital(CareBridgeStorage.getSelectedHospital() || DEMO_HOSPITALS[0]);
     setResult(CareBridgeStorage.getResult());
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setShowAddModal(false);
+        setNotifyingContact(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
   const handleAddContact = (e: React.FormEvent) => {

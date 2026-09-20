@@ -63,6 +63,12 @@ export default function EmergencySummaryPage() {
 
     setSummary(newSummary);
     CareBridgeStorage.setSummary(newSummary);
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setShareSuccessModal(null);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
   const handleShareWithHospital = () => {

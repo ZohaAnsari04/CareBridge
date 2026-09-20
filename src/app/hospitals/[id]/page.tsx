@@ -29,6 +29,12 @@ export default function HospitalDetailPage() {
     const target = DEMO_HOSPITALS.find(h => h.id === hospitalId) || DEMO_HOSPITALS[0];
     setHospital(target);
     CareBridgeStorage.setSelectedHospital(target);
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setDirectionsModal(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, [hospitalId]);
 
   if (!hospital) {

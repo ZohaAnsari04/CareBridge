@@ -53,6 +53,12 @@ export default function AssessmentResultPage() {
     }
 
     if (ans) setAnswers(ans);
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setShowCallConfirm(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
   if (!result) {

@@ -86,6 +86,7 @@ async function testCareBridge() {
   const routes = [
     '/',
     '/assessment',
+    '/assessment/questions',
     '/assessment/result',
     '/hospitals',
     '/hospitals/hosp-1',
