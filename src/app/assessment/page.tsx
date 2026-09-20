@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { AssessmentAnswers } from '@/lib/ai/types';
 import { CareBridgeStorage } from '@/lib/data/store';
+import EmergencyAssessmentBackground from '@/components/assessment/EmergencyAssessmentBackground';
 
 const SYMPTOM_OPTIONS = [
   { id: 'chest_discomfort', label: 'Chest discomfort / tightness', redFlag: true },
@@ -122,8 +123,11 @@ export default function AssessmentStartPage() {
   const canContinue = answers.primaryDescription.trim().length > 0 || answers.selectedSymptoms.length > 0;
 
   return (
-    <div style={{ padding: '3.5rem 0', minHeight: '80vh', background: '#ffffff' }}>
-      <div className="container" style={{ maxWidth: '780px' }}>
+    <div style={{ padding: '3.5rem 0', minHeight: '80vh', background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
+      {/* Ambient Emergency Background */}
+      <EmergencyAssessmentBackground />
+
+      <div className="container" style={{ maxWidth: '780px', position: 'relative', zIndex: 1 }}>
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', color: '#dc2626', fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.4rem' }}>
