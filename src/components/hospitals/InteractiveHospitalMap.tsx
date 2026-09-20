@@ -82,7 +82,7 @@ export default function InteractiveHospitalMap({
             onSelectHospital(h);
           });
           marker.bindPopup(`
-            <div style="font-family:-apple-system,sans-serif;padding:2px;">
+            <div style="font-family:'Montserrat',sans-serif;padding:2px;">
               <strong style="font-size:13px;color:#111827;">${h.name}</strong><br/>
               <span style="font-size:12px;color:#dc2626;font-weight:700;">${h.distanceKm} km • ~${h.travelMinutes} mins</span><br/>
               <span style="font-size:11px;color:#4b5563;">${h.traumaLevel || '24/7 Emergency'}</span>

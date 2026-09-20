@@ -23,6 +23,10 @@ module.exports = {
       transitionDuration: {
         '400': '400ms',
       },
+      fontFamily: {
+        sans: ['Montserrat', 'var(--font-main)', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],
