@@ -17,7 +17,6 @@ import {
 import { DEMO_HOSPITALS } from '@/lib/data/hospitals';
 import { CareBridgeStorage } from '@/lib/data/store';
 import { Hospital } from '@/lib/ai/types';
-import NearbyCareBackground from '@/components/hospitals/NearbyCareBackground';
 
 export default function HospitalDetailPage() {
   const params = useParams();
@@ -52,11 +51,8 @@ export default function HospitalDetailPage() {
   };
 
   return (
-    <div style={{ padding: '3rem 0 5rem 0', background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
-      {/* Ambient Nearby Care Geolocation & Radar Background */}
-      <NearbyCareBackground />
-
-      <div className="container" style={{ maxWidth: '840px', position: 'relative', zIndex: 1 }}>
+    <div style={{ padding: '3rem 0 5rem 0', background: '#ffffff' }}>
+      <div className="container" style={{ maxWidth: '840px' }}>
         <Link href="/hospitals" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', color: '#6b7280', fontSize: '0.9rem', marginBottom: '1.5rem', fontWeight: 600 }}>
           <ArrowLeft size={16} /> Back to Hospital List
         </Link>

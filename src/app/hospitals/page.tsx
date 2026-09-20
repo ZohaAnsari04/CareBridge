@@ -16,7 +16,6 @@ import InteractiveHospitalMap from '@/components/hospitals/InteractiveHospitalMa
 import { DEMO_HOSPITALS } from '@/lib/data/hospitals';
 import { CareBridgeStorage } from '@/lib/data/store';
 import { Hospital, TriageResult } from '@/lib/ai/types';
-import NearbyCareBackground from '@/components/hospitals/NearbyCareBackground';
 
 export default function HospitalDiscoveryPage() {
   const router = useRouter();
@@ -52,11 +51,8 @@ export default function HospitalDiscoveryPage() {
   });
 
   return (
-    <div style={{ padding: '2.5rem 0 4rem 0', background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
-      {/* Ambient Nearby Emergency Care Geolocation & Radar Background */}
-      <NearbyCareBackground />
-
-      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+    <div style={{ padding: '2.5rem 0 4rem 0', background: '#ffffff' }}>
+      <div className="container">
         {/* Top Header */}
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.75rem' }}>
           <div>

@@ -1,14 +1,8 @@
 {
-  "app\\assessment\\questions\\page.tsx -> @/lib/ai/triage": {
-    "id": 4084,
-    "files": [
-      "static/chunks/84.70f8900b7d816de6.js"
-    ]
-  },
   "components\\hospitals\\InteractiveHospitalMap.tsx -> leaflet": {
-    "id": 759,
+    "id": "components\\hospitals\\InteractiveHospitalMap.tsx -> leaflet",
     "files": [
-      "static/chunks/d0deef33.bd75b11a952a2d3d.js"
+      "static/chunks/_app-pages-browser_node_modules_leaflet_dist_leaflet-src_js.js"
     ]
   }
 }
