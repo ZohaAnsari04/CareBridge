@@ -1,7 +1,10 @@
 # 🏥 CareBridge: AI Emergency & Healthcare Access System
 
 > **Hackathon Theme:** TECH FOR A BETTER TOMORROW  
-> **Core Mission:** When every second matters, connect the right information to the right care.
+> **Core Mission:** When every second matters, connect the right information to the right care.  
+> 🌐 **Live Application:** [https://carebridge-zoha.vercel.app/](https://carebridge-zoha.vercel.app/)
+
+[![Live Deployment](https://img.shields.io/badge/Live%20Demo-carebridge--zoha.vercel.app-dc2626?style=for-the-badge&logo=vercel&logoColor=white)](https://carebridge-zoha.vercel.app/)
 
 ---
 
@@ -131,6 +134,20 @@ CareBridge/
 ├── tsconfig.json
 └── README.md
 ```
+
+---
+
+## 🌐 Live Deployment
+
+CareBridge is deployed and live for testing on Vercel:
+
+👉 **[https://carebridge-zoha.vercel.app/](https://carebridge-zoha.vercel.app/)**
+
+You can immediately test the full end-to-end user journey directly in your browser:
+- Emergency Assessment & Voice / Text Triage
+- Interactive Metro Care Facility Discovery & Light Map
+- Clinical Emergency Intake Summary Sheet & QR Code
+- Prototype Family Notification Dispatch
 
 ---
 
