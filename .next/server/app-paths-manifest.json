@@ -1,4 +1,12 @@
 {
   "/page": "app/page.js",
-  "/icon.png/route": "app/icon.png/route.js"
+  "/emergency-summary/page": "app/emergency-summary/page.js",
+  "/api/hospitals/route": "app/api/hospitals/route.js",
+  "/assessment/result/page": "app/assessment/result/page.js",
+  "/api/emergency-summary/route": "app/api/emergency-summary/route.js",
+  "/api/assessment/analyze/route": "app/api/assessment/analyze/route.js",
+  "/api/notifications/route": "app/api/notifications/route.js",
+  "/api/contacts/route": "app/api/contacts/route.js",
+  "/api/profile/route": "app/api/profile/route.js",
+  "/api/hospitals/[id]/route": "app/api/hospitals/[id]/route.js"
 }
